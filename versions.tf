@@ -10,4 +10,12 @@ terraform {
     }
   }
   required_version = ">= 1.1.0"
+
+    cloud {
+    organization = "sgr-fiap-17"
+
+    workspaces {
+      name = "tech-challenge_terra_db"
+    }
+  }
 }
