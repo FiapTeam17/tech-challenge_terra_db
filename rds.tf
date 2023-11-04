@@ -28,7 +28,7 @@ resource "aws_db_instance" "db_instance" {
   engine              = "mysql"
   engine_version      = "8.0.31"
   multi_az            = false
-  identifier          = "sgr-rds-instance1"
+  identifier          = "sgr-rds-instance"
   username            = "root"
   password            = "senhamysqlrds"
   instance_class      = "db.t2.micro"
