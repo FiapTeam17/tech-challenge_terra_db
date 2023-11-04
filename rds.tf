@@ -15,7 +15,7 @@ terraform {
     organization = "sgr-fiap-17"
 
     workspaces {
-      name = "tech-challenge_terra_db"
+      name = "rds-tr"
     }
   }
 }
