@@ -11,7 +11,7 @@ terraform {
   }
   required_version = ">= 1.1.0"
 
-    cloud {
+  cloud {
     organization = "sgr-fiap-17"
 
     workspaces {
@@ -20,19 +20,19 @@ terraform {
   }
 }
 provider "aws" {
-  region  = "us-east-2"
+  region = "us-east-2"
 }
 
 # create the rds instance
 resource "aws_db_instance" "db_instance" {
-  engine                  = "mysql"
-  engine_version          = "8.0.31"
-  multi_az                = false
-  identifier              = "sgr-rds-instance1"
-  username                = "root"
-  password                = "senhamysqlrds"
-  instance_class          = "db.t2.micro"
-  allocated_storage       = 200
-  publicly_accessible     = true
-  db_name                 = "sgr_database"
+  engine              = "mysql"
+  engine_version      = "8.0.31"
+  multi_az            = false
+  identifier          = "sgr-rds-instance1"
+  username            = "root"
+  password            = "senhamysqlrds"
+  instance_class      = "db.t2.micro"
+  allocated_storage   = 200
+  publicly_accessible = true
+  db_name             = "sgr_database"
 }
