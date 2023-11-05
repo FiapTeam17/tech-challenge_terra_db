@@ -19,6 +19,7 @@ terraform {
     }
   }
 }
+
 provider "aws" {
   region = "us-east-2"
 }
@@ -30,7 +31,7 @@ resource "aws_db_instance" "db_instance" {
   multi_az            = false
   identifier          = "sgr-rds-instance"
   username            = "root"
-  password            = "senhamysqlrds"
+  password            = var.mssql_login_pwd
   instance_class      = "db.t2.micro"
   allocated_storage   = 200
   publicly_accessible = true

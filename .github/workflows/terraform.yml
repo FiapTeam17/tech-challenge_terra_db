@@ -10,6 +10,8 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
+    env:
+      TF_VAR_mssql_login_pwd: ${{ secrets.RDS_MYSQL_PWD }}
     permissions:
       pull-requests: write
     steps:
