@@ -15,7 +15,7 @@ terraform {
     organization = "sgr-fiap-17"
 
     workspaces {
-      name = "rds-tr"
+      name = "rds-workspace"
     }
   }
 }
