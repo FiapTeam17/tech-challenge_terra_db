@@ -33,7 +33,7 @@ variable "db_instances" {
 
   default = {
     "db_pedido" = {
-      identifier = "sgr-rds-instance-producao"
+      identifier = "sgr-rds-instance-pedido"
       db_name    = "sgr_database_pedido"
     },
     "db_producao" = {
