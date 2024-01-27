@@ -26,19 +26,19 @@ provider "aws" {
 
 variable "db_instances" {
   description = "Propriedades das instâncias de banco a serem criadas"
-  type        = map(object({
+  type = map(object({
     identifier = string
-    db_name = string
+    db_name    = string
   }))
 
-default = {
+  default = {
     "db_pedido" = {
       identifier = "sgr-rds-instance-producao"
-      db_name = "sgr_database_pedido"
+      db_name    = "sgr_database_pedido"
     },
     "db_producao" = {
       identifier = "sgr-rds-instance-producao"
-      db_name = "sgr_database_producao"
+      db_name    = "sgr_database_producao"
     }
     # Add more accounts as needed
   }
