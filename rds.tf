@@ -59,4 +59,5 @@ resource "aws_db_instance" "mysql_instances" {
   allocated_storage   = 200
   publicly_accessible = true
   db_name             = each.value.db_name
+  skip_final_snapshot = true
 }
