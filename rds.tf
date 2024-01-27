@@ -25,7 +25,7 @@ provider "aws" {
 }
 
 # create the rds instance
-resource "aws_db_instance" "db_instance" {
+resource "aws_db_instance" "db_instance_pedido" {
   engine              = "mysql"
   engine_version      = "8.0.31"
   multi_az            = false
@@ -38,7 +38,7 @@ resource "aws_db_instance" "db_instance" {
   db_name             = "sgr_database_pedido"
 }
 
-resource "aws_db_instance" "db_instance" {
+resource "aws_db_instance" "db_instance_producao" {
   engine              = "mysql"
   engine_version      = "8.0.31"
   multi_az            = false
