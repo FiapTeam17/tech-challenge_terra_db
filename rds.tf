@@ -29,7 +29,7 @@ resource "aws_db_instance" "db_instance_pedido" {
   engine              = "mysql"
   engine_version      = "8.0.31"
   multi_az            = false
-  identifier          = "sgr-rds-instance_pedido"
+  identifier          = "sgr-rds-instance-pedido"
   username            = "root"
   password            = var.mssql_login_pwd
   instance_class      = "db.t2.micro"
@@ -42,7 +42,7 @@ resource "aws_db_instance" "db_instance_producao" {
   engine              = "mysql"
   engine_version      = "8.0.31"
   multi_az            = false
-  identifier          = "sgr-rds-instance_producao"
+  identifier          = "sgr-rds-instance-producao"
   username            = "root"
   password            = var.mssql_login_pwd
   instance_class      = "db.t2.micro"
